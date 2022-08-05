@@ -79,12 +79,12 @@ function saveAccount(data) {
 };
 
 function saveSession(data, saveSession){
-    if(saveSession)
+    if(saveSession){
         localStorage.setItem("session", data)
     }
     
     sessionStorage.setItem("logged", data)
-
+ }
 function getAccount(key) {
     const account = localStorage.getItem(key);
 
